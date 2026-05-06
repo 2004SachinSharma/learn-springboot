@@ -3,7 +3,7 @@ Spring Boot learning repo for Java backend development. Covers REST APIs, depend
 # 🌱 Learn Spring Boot
 
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-green?logo=springboot)
-![Java](https://img.shields.io/badge/Java-17-red?logo=java)
+![Java](https://img.shields.io/badge/Java-21+-red?logo=java)
 ![Maven](https://img.shields.io/badge/Maven-Build-blue?logo=apachemaven)
 ![Postman](https://img.shields.io/badge/Postman-API-orange?logo=postman)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
