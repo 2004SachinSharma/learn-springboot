@@ -1,4 +1,4 @@
-package com.spring.springboot.myFirstAPI.controller;
+package com.spring.springboot.myFirstAPI;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
