@@ -1,7 +1,12 @@
+<div align="center">
+  <img src="https://spring.io/img/spring-boot.svg" width="100"/>
+  <h1>Spring Boot</h1>
+</div>
+
+
 Spring Boot learning repo for Java backend development. Covers REST APIs, dependency injection, Maven, CRUD operations, and basic backend architecture. Hands-on examples to build strong fundamentals in Spring Boot and real-world server-side application development.
 
 # 🌱 Learn Spring Boot
-
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-green?logo=springboot)
 ![Java](https://img.shields.io/badge/Java-21+-red?logo=java)
 ![Maven](https://img.shields.io/badge/Maven-Build-blue?logo=apachemaven)
