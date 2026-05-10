@@ -1,4 +1,4 @@
-package com.spring.springboot.RestController_annotation;
+package com.spring.springboot.p02_RestController_annotation;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

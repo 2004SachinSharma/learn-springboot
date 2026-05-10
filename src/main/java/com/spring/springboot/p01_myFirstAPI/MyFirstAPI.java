@@ -1,4 +1,4 @@
-package com.spring.springboot.myFirstAPI;
+package com.spring.springboot.p01_myFirstAPI;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

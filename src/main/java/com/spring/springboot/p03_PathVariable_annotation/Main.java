@@ -1,4 +1,4 @@
-package com.spring.springboot.PathVariable_annotation;
+package com.spring.springboot.p03_PathVariable_annotation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
