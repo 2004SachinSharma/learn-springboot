@@ -1,4 +1,4 @@
-package com.spring.springboot.pathvariable_annotation;
+package com.spring.springboot.p03_PathVariable_annotation;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
