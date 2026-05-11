@@ -14,25 +14,25 @@ import org.springframework.web.bind.annotation.RestController;
 class UserController {
 
     // Handles GET request
-    @RequestMapping(value = "/users", method = RequestMethod.GET)
+    @RequestMapping(value = "/users", method = RequestMethod.GET)  //Instead, the preferred one is @GetMapping
     public String getUsers() {
         return "Fetching users";
     }
 
     // Handles POST request
-    @RequestMapping(value = "/users", method = RequestMethod.POST)
+    @RequestMapping(value = "/users", method = RequestMethod.POST)  //Instead, the preferred one is @PostMapping
     public String createUser() {
         return "Creating user";
     }
 
     // Handles PUT request
-    @RequestMapping(value = "/users", method = RequestMethod.PUT)
+    @RequestMapping(value = "/users", method = RequestMethod.PUT)   //Instead, the preferred one is @PutMapping
     public String updateUser() {
         return "Updating user";
     }
 
     // Handles DELETE request
-    @RequestMapping(value = "/users", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/users", method = RequestMethod.DELETE) //Instead, the preferred one is @DeleteMapping
     public String deleteUser() {
         return "Deleting user";
     }
