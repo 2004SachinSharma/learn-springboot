@@ -66,18 +66,34 @@ public class RequestController {
     }
 
     // 6. Logic for checking existence (HEAD)
-    @GetMapping("/exists/{id}")
-    public ResponseEntity<Boolean> checkExists(@PathVariable int id) {
-        // Sirf metadata ya existence check karna, body return nahi hoti
-          boolean exists = id >= 0 && id < dataStore.size();
+    @RequestMapping(value = "/{id}", method = RequestMethod.HEAD) //Note: We use RequestMethod.HEAD here because HEAD is specifically designed to return only headers without a body. It's very fast and saves bandwidth.
+    public ResponseEntity<Void> checkExistence(@PathVariable String id) {
+        boolean exists = dataStore.contains(id); // Your logic here
+        if (exists) {
+            return ResponseEntity.noContent().build(); // 204: It exists, but no data to show
+        }
+        return ResponseEntity.notFound().build(); // 404: Not found
+    /*Note: .build() vs .body()
+     Dono saath mein nahi aayenge: ...body("").build() likhoge toh code phat jayega (Compile error).
+     Shorthand Limit: ResponseEntity.notFound() ke baad .body() nahi lagta, wahan sirf .build() chalta hai.
+     Agar 404 ke saath body chahiye, toh .status(404).body() wala manual rasta pakdo.
 
-            if (!exists) {
-                // Resource nahi mila toh 404 Not Found
-                return ResponseEntity.notFound().build();
-            }
+     1. .build()
+        Ismein sirf Headers (jaise Status Code, Content-Type, custom headers) jaate hain. Response ki Body khali (empty) hoti hai.
 
-            // Mil gaya toh 204 No Content (Matlab: "Haan hai, par body khali hai")
-            return ResponseEntity.noContent().build();
-        };
+        Example: 404 Not Found (Bas bata diya ki nahi mila, kuch bheja nahi).
+
+     2. .body(data)
+        Ismein Headers + Body dono jaate hain. Status code toh jayega hi, saath mein tumhara data (JSON ya String) bhi jayega.
+
+        Example: 200 OK + {"name": "Laptop"}.
+
+        In Short:
+        .build() = "No Body, Only Status/Headers"
+        .body() = "Status/Headers + Actual Data"
+        Dono hi raste response ko finalize karte hain, bas farak "Samaan" (Data) ka hai. Ab jab tum Postman mein check karoge, toh dhyan dena ki .build() waale case mein "Body" tab ekdum blank dikhega!
+     */
+
+    }
     }
 
