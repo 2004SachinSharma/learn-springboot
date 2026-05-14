@@ -1,4 +1,4 @@
-package com.spring.springboot.p11_API_Versioning_latestSpring7Approach.headerVersioning;
+package com.spring.springboot.p11_API_Versioning_latestSpring7Approach.ControllerforAll4Versioning;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

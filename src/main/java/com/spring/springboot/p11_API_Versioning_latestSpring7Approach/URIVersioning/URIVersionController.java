@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/version/{v}")
-public class VersionController {
+public class URIVersionController {
 
     @GetMapping(version = "1")
     ResponseEntity<String> defaultAPIversion(){
