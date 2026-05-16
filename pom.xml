@@ -40,6 +40,22 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency> <!--Let's Leverage this dependency today. The devtools. -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope> <!--The scope tells Maven at what stage of the project lifecycle this library is needed.-->
+			<!--You do need this library actively running in the background when the application is executing (e.g., to handle automatic restarts when you change code in IntelliJ).-->
+			<optional>true</optional> <!--This ensures that this(devtool) dependency will not be added as a transitive dependency in another new project when any new project is using this(jobportal) project as a dependency -->
+		</dependency>
+
+<!--before adding this dependency the Application too around 2.072 sec to start-->
+<!--		See the last line of the log ": Started Main in 2.072 seconds (process running for 2.856)"-->
+
+<!--after adding this dependency build just took ": Started Main in 0.268 seconds (process running for 45.88)" -->
+
+<!-- See the difference-->
+
 	</dependencies>
 
 	<build>
