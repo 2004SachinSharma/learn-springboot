@@ -1,12 +1,11 @@
-package com.spring.springboot.Global_Exception_Handling;
+package com.spring.springboot.p13_Global_Exception_Handling;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Main {
-    static void main() {
-        SpringApplication.run(Main.class);
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
     }
 }
