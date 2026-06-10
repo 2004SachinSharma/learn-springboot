@@ -1,4 +1,4 @@
-package com.spring.springboot.p14_BackendValidation;
+package com.spring.springboot.p14_BackendValidation_RequestBodyValidation;
 
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package com.spring.springboot.p14_BackendValidation;
+package com.spring.springboot.p14_BackendValidation_RequestBodyValidation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
