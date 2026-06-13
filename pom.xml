@@ -77,11 +77,12 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
+		<dependency> <!--Dependency to implement backend validations-->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
-		<dependency>
+
+		<dependency> <!--Dependency to leverage Swagger APIs Documentation-->
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>3.0.3</version>
